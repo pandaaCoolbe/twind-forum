@@ -1,0 +1,225 @@
+---
+title: topic-page
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="">
+  <section id="page-title">
+    <div class="container clearfix">
+      <h2>this is topic 1</h2>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="index.html">討論列表</a></li>
+        <li class="breadcrumb-item active" aria-current="page">討論區</li>
+      </ol>
+    </div>
+  </section>
+  <section id="content">
+    <div class="content-wrap">
+      <div class="container mw-md">
+        <div class="topic-post">
+          <div
+            class="row g-0 justify-content-between align-items-center border-top border-bottom py-3 mb-4"
+          >
+            <div class="col-9">
+              <div class="d-flex align-items-center">
+                <div>
+                  <h5 class="mb-0 h6 fw-semibold">
+                    <a class="text-dark" href="#">Gordon Norman</a>
+                  </h5>
+                  <small class="text-muted mb-0 fw-normal"
+                    >August 15, 2020, 7:54 AM</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <a
+                href="#"
+                id="editlink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><i class="icon-line-ellipsis icon-2x alt-color"></i
+              ></a>
+              <div
+                class="dropdown-menu dropdown-menu-links rounded shadow-sm dropdown-menu-end py-0 m-0"
+                aria-labelledby="editlink"
+              >
+              <a class="dropdown-item rounded-top" href="new-edit-topic.html"
+                ><i class="icon-line-edit me-2"></i>編輯</a
+              >
+              <a class="dropdown-item" href="#"
+                ><i class="icon-line-circle-cross me-2"></i>關閉</a
+              >
+              <a class="dropdown-item" href="#"
+                ><i class="icon-line-trash-2 me-2"></i>刪除</a
+              >
+              <a
+                class="dropdown-item"
+                href="#message-reply"
+                data-scrollto="#message-reply"
+                ><i class="icon-line-corner-up-left me-2"></i>回覆</a
+              >
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <p>Thanks <strong>Rob</strong>.</p>
+        </div>
+        <div
+          class="topic-post reply mt-5 p-4 p-md-5 border-top border-width-5 border-orange"
+        >
+          <div class="row justify-content-between align-items-center mb-4">
+            <div class="col-9">
+              <h2 class="mb-0 fw-bold">
+                <i class="icon-comments text-success"></i> 留言區
+              </h2>
+            </div>
+          </div>
+          <!-- comment1 -->
+          <div class="pb-3">
+            <div
+              class="row g-0 justify-content-between align-items-center border-top border-bottom border-orange py-3 mb-4"
+            >
+              <div class="col-9">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h5 class="mb-0 h6 fw-semibold align-middle">
+                      <a class="text-dark" href="#">SemiColonWeb</a
+                      ><span class="badge bg-info text-white p-1 ms-1">Team</span>
+                    </h5>
+                    <small class="text-muted mb-0 fw-normal"
+                      >August 11, 2020, 12:03 PM</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <a
+                  href="#"
+                  id="editlink2"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><i class="icon-line-ellipsis icon-2x alt-color"></i
+                ></a>
+                <div
+                  class="dropdown-menu dropdown-menu-links rounded shadow-sm dropdown-menu-end py-0 m-0"
+                  aria-labelledby="editlink2"
+                >
+                  <a class="dropdown-item rounded-top" href="#"
+                    ><i class="icon-line-edit me-2"></i>編輯</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><i class="icon-line-circle-cross me-2"></i>關閉</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><i class="icon-line-trash-2 me-2"></i>刪除</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="#message-reply"
+                    data-scrollto="#message-reply"
+                    ><i class="icon-line-corner-up-left me-2"></i>回覆</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          </div>
+          <!-- comment2 -->
+          <div class="pb-3">
+            <div
+              class="row g-0 justify-content-between align-items-center border-top border-bottom border-orange py-3 mb-4"
+            >
+              <div class="col-9">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h5 class="mb-0 h6 fw-semibold align-middle">
+                      <a class="text-dark" href="#">SemiColonWeb</a
+                      ><span class="badge bg-info text-white p-1 ms-1">Team</span>
+                    </h5>
+                    <small class="text-muted mb-0 fw-normal"
+                      >August 11, 2020, 12:03 PM</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <a
+                  href="#"
+                  id="editlink2"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><i class="icon-line-ellipsis icon-2x alt-color"></i
+                ></a>
+                <div
+                  class="dropdown-menu dropdown-menu-links rounded shadow-sm dropdown-menu-end py-0 m-0"
+                  aria-labelledby="editlink2"
+                >
+                  <a class="dropdown-item rounded-top" href="#"
+                    ><i class="icon-line-edit me-2"></i>編輯</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><i class="icon-line-circle-cross me-2"></i>關閉</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><i class="icon-line-trash-2 me-2"></i>刪除</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="#message-reply"
+                    data-scrollto="#message-reply"
+                    ><i class="icon-line-corner-up-left me-2"></i>回覆</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          </div>
+        </div>
+        <div
+          id="message-reply"
+          class="topic-form mt-5"
+          data-scrollto-settings='{"offset":140,"speed":1250,"easing":"easeOutQuad"}'
+        >
+          <h3 class="h2 fw-bolder mb-4">留言</h3>
+          <form
+            class="row"
+            action="#"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="col-12 form-group mb-4">
+              <textarea
+                name="post-message"
+                id="post-message"
+                class="form-control mb-3"
+                cols="30"
+                rows="10"
+                aria-hidden="true"
+              ></textarea>
+            <div class="col-12">
+              <button
+                type="submit"
+                name="submit"
+                class="button button-large bg-alt py-2 rounded-1 fw-medium nott ls0 ms-0"
+              >
+                送出
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

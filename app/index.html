@@ -1,0 +1,190 @@
+---
+title: list
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section id="page-title">
+  <div class="container clearfix">
+    <h2>討論區列表</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Pages</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Services</li>
+    </ol>
+  </div>
+</section>
+<div class="container">
+  <div class="row text-center mt-5 mb-1">
+    <div class="col-md-6">
+      <div class="input-group input-group mt-2 mb-4">
+        <input
+          class="form-control rounded-start"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-secondary" type="submit">
+          <i class="icon-line-search"></i>
+        </button>
+      </div>
+    </div>
+    <div class="col-md-3 text-end">
+      <a
+        href="new-edit-topic.html"
+        class="button button-border button-rounded mx-0"
+        ><i class="icon-plus"></i>建立討論區</a
+      >
+    </div>
+  </div>
+  <div class="row justify-content-center flex-wrap-reverse">
+    <div class="col-md-9">
+      <div class="mw-md mx-auto">
+        <ul class="list-unstyled mb-4">
+          <li>
+            <ul
+              class="topic list-unstyled row mx-0 justify-content-between align-items-center"
+            >
+              <li class="entry mb-0 col-sm-10">
+                <h3 class="mb-0">
+                  <a href="topic-page.html">this is topic 1</a>
+                </h3>
+                <div class="entry-meta mt-1">
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="2022-05-10 22:30"
+                        >40 mins ago</a
+                      >
+                    </li>
+                    <li><a href="#">4 Replies</a></li>
+                    <li>
+                      <a href="#" class="badge bg-info text-white"
+                        >In Progress</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="col-sm-2 d-flex justify-content-sm-end mt-4 mt-sm-0">
+                <div class="hot-icon-wrap d-flex">
+                  <i class="hot-icon-wrap__hot-icon"></i>
+                  <i class="hot-icon-wrap__hot-icon"></i>
+                </div>
+              </li>
+            </ul>
+            <ul
+              class="topic odd list-unstyled row mx-0 justify-content-between align-items-center"
+            >
+              <li class="entry mb-0 col-sm-10">
+                <h3 class="mb-0">
+                  <a href="#">this is topic 2</a>
+                </h3>
+                <div class="entry-meta mt-1">
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="2022-05-10 22:30"
+                        >3 days ago</a
+                      >
+                    </li>
+                    <li><a href="#">1 Replies</a></li>
+                    <li>
+                      <a href="#" class="badge bg-info text-white"
+                        >In Progress</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="col-sm-2 d-flex justify-content-sm-end mt-4 mt-sm-0">
+                <div class="hot-icon-wrap d-flex">
+                  <i class="hot-icon-wrap__hot-icon"></i>
+                </div>
+              </li>
+            </ul>
+            <ul
+              class="topic list-unstyled row mx-0 justify-content-between align-items-center"
+            >
+              <li class="entry mb-0 col-sm-10">
+                <h3 class="mb-0">
+                  <a href="#">this is topic 3</a>
+                </h3>
+                <div class="entry-meta mt-1">
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="2022-05-10 22:30"
+                        >7 days ago</a
+                      >
+                    </li>
+                    <li><a href="#">21 Replies</a></li>
+                    <li>
+                      <a href="#" class="badge bg-success text-white">Solved</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="col-sm-2 d-flex justify-content-sm-end mt-4 mt-sm-0">
+                <div class="hot-icon-wrap d-flex">
+                  <i class="hot-icon-wrap__hot-icon"></i>
+                  <i class="hot-icon-wrap__hot-icon"></i>
+                  <i class="hot-icon-wrap__hot-icon"></i>
+                  <i class="hot-icon-wrap__hot-icon"></i>
+                  <i class="hot-icon-wrap__hot-icon"></i>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="pagination justify-content-end">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+              <span class="op-05" aria-hidden="true">«</span></a
+            >
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next"
+              ><span aria-hidden="true">»</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-2 offset-1 mb-4">
+      <h5 class="h5">討論標籤</h5>
+      <div class="flex">
+        <button class="btn badge rounded-pill bg-info" type="button">
+          #tag1
+        </button>
+        <button class="btn badge rounded-pill bg-info" type="button">
+          #tag2
+        </button>
+        <button class="btn badge rounded-pill bg-info" type="button">
+          #tag3
+        </button>
+        <button class="btn badge rounded-pill bg-info" type="button">
+          #tag4
+        </button>
+        <button class="btn badge rounded-pill bg-info" type="button">
+          #tag5
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

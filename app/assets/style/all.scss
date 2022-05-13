@@ -1,0 +1,51 @@
+// @import "../../../node_modules/bootstrap/scss/functions";
+// // @import "./helpers/variables";
+
+// // @import "./base/reset";
+// @import "../../../node_modules/bootstrap/scss/bootstrap-utilities";
+
+.tooltip.show {
+  opacity: 1;
+} 
+.tooltip-inner {
+  background-color: #e6e6e6;
+  color: #333333;
+  font-size: 12px;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: transparent !important;
+}
+
+
+.hot-icon-wrap {
+  &__hot-icon{
+    &:nth-child(2){
+      background-color: #ffbb53;
+    }
+    &:nth-child(3){
+      background-color: #ffb149;
+    }
+    &:nth-child(4){
+      background-color: #ffa73f;
+    }
+    &:nth-child(5){
+      background-color: #ffa73f;
+    }
+    display: block;
+    background-color: #ffcf67;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-left: -0.35rem;
+  }
+}
+
+
+// selsect2
+.select2-container--open {
+  z-index: 1056;
+}
+
+.border-orange {
+  border-color: #F9BE79 !important;
+}
