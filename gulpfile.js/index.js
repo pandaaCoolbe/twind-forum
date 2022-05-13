@@ -72,13 +72,6 @@ function babel() {
     );
 }
 
-function vendorsJs() {
-  return gulp.src(envOptions.vendors.src)
-    .pipe($.concat(envOptions.vendors.concat))
-    .pipe(gulp.dest(envOptions.vendors.path));
-}
-
-
 function browser() {
   browserSync.init({
     server: {
@@ -104,7 +97,7 @@ function deploy() {
 function watch() {
   gulp.watch(envOptions.html.src, gulp.series(layoutHTML));
   gulp.watch(envOptions.html.ejsSrc, gulp.series(layoutHTML));
-  gulp.watch(envOptions.javascript.src, gulp.series(babel));
+  // gulp.watch(envOptions.javascript.src, gulp.series(babel));
   gulp.watch(envOptions.img.src, gulp.series(copyFile));
   gulp.watch(envOptions.style.src, gulp.series(sass));
 }
@@ -113,6 +106,6 @@ exports.deploy = deploy;
 
 exports.clean = clean;
 
-exports.build = gulp.series(clean, copyFile, layoutHTML, sass, babel, vendorsJs);
+exports.build = gulp.series(clean, copyFile, layoutHTML, sass);
 
-exports.default = gulp.series(clean, copyFile, layoutHTML, sass, babel, vendorsJs, gulp.parallel(browser, watch));
+exports.default = gulp.series(clean, copyFile, layoutHTML, sass, gulp.parallel(browser, watch));

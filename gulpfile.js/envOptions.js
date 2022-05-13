@@ -39,21 +39,21 @@ let envOptions = {
     ],
     path: `${distPath}/assets/style`,
   },
-  javascript: {
-    src: [
-      `${srcPath}/assets/js/**/*.js`
-    ],
-    concat: 'all.js',
-    path: `${distPath}/assets/js`,
-  },
-  vendors: {
-    src: [
-      `${nodePath}/jquery/dist/jquery.slim.min.js`,
-      `${nodePath}/bootstrap/dist/js/bootstrap.bundle.min.js`, // 已包含 popper.js
-    ],
-    concat: 'vendors.js',
-    path: `${distPath}/assets/js`,
-  },
+  // javascript: {
+  //   src: [
+  //     `${srcPath}/assets/js/**/*.js`
+  //   ],
+  //   concat: 'all.js',
+  //   path: `${distPath}/assets/js`,
+  // },
+  // vendors: {
+  //   src: [
+  //     `${nodePath}/jquery/dist/jquery.slim.min.js`,
+  //     `${nodePath}/bootstrap/dist/js/bootstrap.bundle.min.js`, // 已包含 popper.js
+  //   ],
+  //   concat: 'vendors.js',
+  //   path: `${distPath}/assets/js`,
+  // },
   img: {
     src: [
       `${srcPath}/assets/images/**/*`,

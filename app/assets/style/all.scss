@@ -1,8 +1,3 @@
-// @import "../../../node_modules/bootstrap/scss/functions";
-// // @import "./helpers/variables";
-
-// // @import "./base/reset";
-// @import "../../../node_modules/bootstrap/scss/bootstrap-utilities";
 
 .tooltip.show {
   opacity: 1;
@@ -48,4 +43,12 @@
 
 .border-orange {
   border-color: #F9BE79 !important;
+}
+
+.tag-wrap {
+  &__item{
+    &:active{
+      color: #212529;
+    }
+  }
 }

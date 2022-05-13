@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>new-edit-topic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://twind.test-01.scottchayaa.com/twind/canvas/css/bootstrap.css">
+    <link rel="stylesheet" href="https://twind.test-01.scottchayaa.com/twind/canvas/css/style.css">
+    <link rel="stylesheet" href="https://twind.test-01.scottchayaa.com/twind/canvas/css/dark.css">
+    <link rel="stylesheet" href="https://twind.test-01.scottchayaa.com/twind/canvas/css/swiper.css">
+    <link rel="stylesheet" href="https://twind.test-01.scottchayaa.com/twind/canvas/demos/business/business.css">
+    <link rel="stylesheet" href="https://twind.test-01.scottchayaa.com/twind/canvas/demos/business/css/fonts.css">
+    <link rel="stylesheet" href="./assets/style/font-icons.css">
+    <link rel="stylesheet" href="https://twind.test-01.scottchayaa.com/twind/canvas/css/animate.css">
+    <link rel="stylesheet" href="https://twind.test-01.scottchayaa.com/twind/canvas/css/magnific-popup.css">
+    <link rel="stylesheet" href="https://twind.test-01.scottchayaa.com/twind/canvas/css/components/bs-rating.css">
+    <link rel="stylesheet" href="https://twind.test-01.scottchayaa.com/twind/canvas/one-page/css/et-line.css">
+    <link rel="stylesheet" href="https://themes.semicolonweb.com/html/canvas/demos/forum/forum.css">
+    <!-- editor -->
+    <link rel="stylesheet" type="text/css" id="mce-u0" href="https://themes.semicolonweb.com/html/canvas/js/components/tinymce/skins/ui/oxide/skin.min.css">
+    <!-- select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style/all.css" type="text/css">
+    
+  </head>
+
+  <body>
+
+    
+<div class="">
+  <section id="page-title" class="py-6 page-title-center text-center">
+    <div class="container">
+      <h2 class="h2" style="font-weight: 800">
+        建立討論區
+      </h2>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="alt-color" href="index.html">討論列表</a></li>
+        <li class="breadcrumb-item text-black-50 active" aria-current="page">建立討論區</li>
+      </ol>
+    </div>
+  </section>
+  <section id="content">
+    <div class="content-wrap">
+      <div class="container mw-md">
+        <form
+          class="row mb-0"
+          action="#"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="col-12 form-group mb-4">
+            <textarea
+              name="post-message"
+              id="post-message"
+              class="form-control mb-3"
+              cols="30"
+              rows="20"
+              aria-hidden="true"
+            ></textarea>
+            
+          </div>
+          <div class="col-6 form-group mb-5">
+            <label for="tag-select" class="form-label">標籤輸入</label>
+            <select id="tag-select" class="js-tagging form-control form-control-lg" multiple="multiple">
+              <option>orange</option>
+              <option>white</option>
+              <option>purple</option>
+            </select>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <button
+              type="submit"
+              name="submit"
+              class="button button-large bg-alt border border-width-2 rounded-1 fw-medium nott ls0 ms-0"
+            >
+              送出
+            </button>
+            <button
+              type="button"
+              class="button button-large button-border border-default h-bg-danger rounded-1 fw-medium nott ls0 ms-0"
+              onclick="window.history.go(-1)"
+            >
+              取消
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+    <script src="https://twind.test-01.scottchayaa.com/twind/canvas/js/jquery.js"></script>
+    <script src="https://twind.test-01.scottchayaa.com/twind/canvas/js/plugins.min.js"></script>
+    <!-- editor -->
+    <script src="https://themes.semicolonweb.com/html/canvas/js/components/tinymce/tinymce.min.js"></script>
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://twind.test-01.scottchayaa.com/twind/canvas/js/functions.js"></script>
+    <script src="https://twind.test-01.scottchayaa.com/twind/canvas/js/custom.js"></script>
+    <script>
+      // editor
+      jQuery(document).ready( function(){
+        tinymce.init({
+          selector: '#post-message',
+          menubar: false,
+          setup: function(editor) {
+            editor.on('change', function(e) {
+              editor.save();
+            });
+          }
+        });
+        $(function(){
+          if(window.location.hash) {
+            var hash = window.location.hash;
+            $(hash).modal('toggle');
+          }
+        });
+      });
+    </script>
+    
+    <script>
+      // select2
+      jQuery(document).ready( function(){
+        $(".js-tagging").select2({
+          tags: true,
+          // placeholder : "請輸入",
+          width: "100%"
+        });
+      });
+    </script>
+    
+    
+  </body>
+
+</html>
